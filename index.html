@@ -1,28 +1,93 @@
 <html>
   <head>
     <script src="https://kit.fontawesome.com/2aa858642d.js" crossorigin="anonymous"></script>
+    <style>
+      a {
+        color: slategray;
+        text-decoration: none;
+      }
+      a:visited {
+        color: slategray;
+      }
+      i {
+        font-size: 50px;
+        width: 80px;
+      }
+      .pane {
+        width: 300px;
+        padding: 1px 0;
+        border-radius: 10px;
+        background-color: aliceblue;
+        font-family: Tahoma;
+      }
+      .item {
+        font-size: larger;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+      }
+      .label {
+        display: flex;
+        flex-direction: column;
+      }
+      .url {
+        font-size: x-small;
+      }
+    </style>
   </head>
   <body>
     <center>
       <div class="pane">
-        <div class="item twitter">
-          <a href="http://tw.lee.fan"><i class="fa-brands fa-twitter"></i>tw.lee.fan</a>
+        <a class="item" href="https://tw.lee.fan">
+          <i class="fa-brands fa-twitter"></i>
+          <div class="label">
+            <span class="username">@leefan09</span>
+            <span class="url">https://tw.lee.fan</span>
+          </div>
+        </a>
+        <a class="item" href="https://yt.lee.fan">
+          <i class="fa-brands fa-youtube"></i>
+          <div class="label">
+            <span class="username">@leefan09</span>
+            <span class="url">https://yt.lee.fan</span>
+          </div>
+        </a>
+        <a class="item" href="https://sc.lee.fan">
+          <i class="fa-brands fa-soundcloud"></i>
+          <div class="label">
+            <span class="username">leefan</span>
+            <span class="url">https://sc.lee.fan</span>
+          </div>
+        </a>
+        <a class="item" href="https://gh.lee.fan">
+          <i class="fa-brands fa-github"></i>
+          <div class="label">
+            <span class="username">leefan</span>
+            <span class="url">https://gh.lee.fan</span>
+          </div>
+        </a>
+        <a class="item" href="https://in.lee.fan">
+          <i class="fa-brands fa-linkedin"></i>
+          <div class="label">
+            <span class="username">leefan09</span>
+            <span class="url">https://in.lee.fan</span>
+          </div>
+        </a>
+        <div class="item">
+          <i class="fa-brands fa-discord"></i>
+          <div class="label">
+            <span class="username">leefan</span>
+          </div>
         </div>
-        <div class="item youtube">
-          <a href="http://yt.lee.fan"><i class="fa-brands fa-youtube"></i>yt.lee.fan</a>
-        </div>
-        <div class="item soundcloud">
-          <a href="http://sc.lee.fan"><i class="fa-brands fa-soundcloud"></i>sc.lee.fan</a>
-        </div>
-        <div class="item github">
-          <a href="http://gh.lee.fan"><i class="fa-brands fa-github"></i>gh.lee.fan</a>
-        </div>
-        <div class="item linkedin">
-          <a href="http://in.lee.fan"><i class="fa-brands fa-linkedin"></i>in.lee.fan</a>
-        </div>
-        <div class="item email">
-          <a href="mailto: leefan09@gmail.com"><i class="fa-solid fa-envelope"></i>leefan09@gmail.com</a>
-        </div>
+        <a class="item" href="mailto: leefan09@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="label">
+            <span class="username">leefan09@gmail.com</span>
+          </div>
+        </a>
       </div>
     </center>
   </body>
